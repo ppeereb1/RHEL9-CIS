@@ -1184,6 +1184,8 @@ rhel9cis_rpm_audit_file: /var/tmp/rpm_file_check
 ## Control 6.1.9 - Ensure no world writable files exist
 # Allow ansible to adjust world-writable files. False will just display world-writable files, True will remove world-writable.
 rhel9cis_no_world_write_adjust: true
+rhel9cis_no_world_write_ignore_dirs: []
+
 
 ## Control 6.2.16 - Ensure local interactive user dot files are not group or world writable
 # This boolean variable governs if current role should follow filesystem links for changes to

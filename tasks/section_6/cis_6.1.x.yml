@@ -137,6 +137,7 @@
         when:
             - rhel_09_6_1_9_perms_results.stdout_lines is defined
             - rhel9cis_no_world_write_adjust
+            - item not in rhel9cis_no_world_write_ignore_dirs
   when:
       - rhel9cis_rule_6_1_9
   tags:
